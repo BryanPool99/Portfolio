@@ -5,15 +5,15 @@ import perfilImage from "./../../assets/Img/perfil.png";
 export default function Main() {
   return (
     <main>
-      <div className='titular'>
+      <aside className='titular'>
         <p>Hola a todos mi nombre es</p>
         <h1> Bryan Arredondo</h1>
         <h2>Web Developer</h2>
-      </div>
-      <div className='social_media'>
+      </aside>
+      <aside className='social_media'>
         <button><LinkedinIcon/></button>
         <button><GithubIcon/></button>
-      </div>
+      </aside>
       <figure className='img'>
         <img src={perfilImage} alt="Foto de perfil de usuario" />
       </figure>
