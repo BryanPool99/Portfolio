@@ -8,7 +8,7 @@ export default function Navbar() {
               <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">About me</Link>
             </li>
             <li>
               <Link to="/skills">Skills</Link>
@@ -21,6 +21,5 @@ export default function Navbar() {
             </li>
         </ul>
     </nav>
-  
   )
 }
