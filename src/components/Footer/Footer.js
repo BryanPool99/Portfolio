@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { LinkedinIcon, GithubIcon, CodepenIcon, FrontendmentorIcon } from "./../../assets/Img/Icons/icons";
 
 export default function Footer() {
