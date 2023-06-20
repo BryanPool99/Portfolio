@@ -3,14 +3,14 @@ import { LinkedinIcon, GithubIcon, CodepenIcon, FrontendmentorIcon } from "./../
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className='bg-black d-flex flex-column align-items-center'>
       <div>
-        <a href='https://www.linkedin.com/in/bryan-pool-arredondo-ovalle/'><LinkedinIcon/></a>
-        <a href='https://github.com/BryanPool99'><GithubIcon/></a>
-        <a href='https://www.frontendmentor.io/profile/BryanPool99'><FrontendmentorIcon/></a>
-        <a href='https://codepen.io/bryanpool99'><CodepenIcon/></a>
+        <a  className='text-light m-2' href='https://www.linkedin.com/in/bryan-pool-arredondo-ovalle/'><LinkedinIcon/></a>
+        <a  className='text-light m-2' href='https://github.com/BryanPool99'><GithubIcon/></a>
+        <a  className='text-light m-2' href='https://www.frontendmentor.io/profile/BryanPool99'><FrontendmentorIcon/></a>
+        <a  className='text-light m-2'  href='https://codepen.io/bryanpool99'><CodepenIcon/></a>
       </div>
-      <div>
+      <div className='text-light text-center'>
         <p>
           <b>&copy; Bryan Arredondo</b> Todos los derechos reservados.
         </p>
