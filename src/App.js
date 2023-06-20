@@ -6,7 +6,6 @@ import Projects from "./components/Main/Projects/Projects"
 import Skills from "./components/Main/Skills/Skills"
 import Contact from "./components/Main/Contact/Contact"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 function App() {
   return (
     <Router>
