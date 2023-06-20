@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import {  Button, Form, FormGroup, Input } from 'reactstrap';
 
 const schema = yup.object({
   firstName: yup.string().required(),
@@ -16,19 +17,50 @@ export default function Contact() {
   });
   const onSubmit = data => console.log(data);
   return (
-    <section>
+    
+    <section className='bgContact text-center'>
       <h2>CONTACT</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("firstName")}  placeholder='Ingrese su nombre' />
-      <p>{errors.firstName?.message}</p>
-      <input {...register("email")}  placeholder='Ingrese su email'/>
-      <p>{errors.email?.message}</p>
-      <input {...register("phone")}  placeholder='Numero de celular'/>
-      <p>{errors.phone?.message}</p>
-      <textarea {...register("msg")}  placeholder='Su mensaje'/>
-      <p>{errors.msg?.message}</p>
-      <input type="submit" />
-    </form>
+      <Form onSubmit={handleSubmit(onSubmit)} className='container-sm'>
+        <FormGroup>
+          <Input
+            id="firstName"
+            {...register("firstName")}
+            placeholder="Ingrese su nombre"
+            type="text"
+          />
+          {errors.firstName && <p>{errors.firstName.message}</p>}
+        </FormGroup>
+        <FormGroup>
+          <Input
+            id="email"
+            {...register("email")}
+            placeholder="Ingrese su email"
+            type="email"
+          />
+          {errors.email && <p>{errors.email.message}</p>}
+        </FormGroup>
+        <FormGroup>
+          <Input
+            id="phone"
+            {...register("phone")}
+            placeholder="Ingrese su número de celular"
+            type="tel"
+          />
+          {errors.phone && <p>{errors.phone.message}</p>}
+        </FormGroup>
+        <FormGroup>
+          <Input
+            id="msg"
+            {...register("msg")}
+            placeholder="Ingrese su mensaje"
+            type="textarea"
+          />
+          {errors.msg && <p>{errors.msg.message}</p>}
+        </FormGroup>
+        <Button type='submit'>
+          Enviar
+        </Button>
+      </Form>
     </section>
   )
 }
