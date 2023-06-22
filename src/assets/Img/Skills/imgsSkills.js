@@ -1,9 +1,6 @@
 export const images = {
     "back": [
       { 
-        src: require("./Backend/nodeJS.png"), alt: "nodeJS"
-      },
-      { 
         src: require("./Backend/springBoot.png"), alt: "spring-boot"
       }
     ],
