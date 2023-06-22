@@ -6,15 +6,16 @@ export default function skill(props) {
     const imagesArray = images[category];
     return (
         <aside>
-            <h3>{props.title}</h3>
-            <hr />
-            <div>
+            <h3>{props.title}:</h3>
+            
+            <div className='container-fluid d-flex flex-row flex-wrap align-items-center justify-content-center'>
                 {imagesArray.map((image, index) => (
                     <figure key={index}>
-                        <img src={image.src} alt={image.alt} />
+                        <img className='bg-gradient' src={image.src} alt={image.alt} />
                     </figure>
                 ))}
             </div>
+            <hr />
         </aside>
     )
 }
