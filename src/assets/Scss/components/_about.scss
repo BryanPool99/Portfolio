@@ -1,0 +1,14 @@
+.about{
+    background: $backgroundColor;
+    min-height: 80vh;
+   aside{
+    h2{
+        border: 5px solid $black;
+        padding: 1rem;
+        text-align: center;
+    }
+    .description{
+        max-width: 40rem;
+    }
+   }
+}
