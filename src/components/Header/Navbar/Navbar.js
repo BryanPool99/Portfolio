@@ -34,25 +34,25 @@ export default function NavbarComponent(args) {
         </ul>
     </nav>
     */
-    <nav>
-      <Navbar color='dark' expand="sm">
-        <NavbarToggler onClick={toggle} className='bg-light'/>
+    <nav >
+      <Navbar expand="sm">
+        <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar >
-          <Nav navbar className='d-flex w-100 justify-content-between'>
-            <NavItem >
-              <NavLink className="text-light" tag={Link} to="/">Inicio</NavLink>
+          <Nav navbar className='navbar-nav'>
+            <NavItem className='nav-item'>
+              <NavLink className="nav-link" tag={Link} to="/">Inicio</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink className="text-light" tag={Link} to="/about">About me</NavLink>
+            <NavItem className='nav-item'>
+              <NavLink className="nav-link" tag={Link} to="/about">About me</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink className="text-light" tag={Link} to="/skills">Skills</NavLink>
+            <NavItem className='nav-item'>
+              <NavLink className="nav-link" tag={Link} to="/skills">Skills</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink className="text-light" tag={Link} to="/projects">Projects</NavLink>
+            <NavItem className='nav-item'>
+              <NavLink className="nav-link" tag={Link} to="/projects">Projects</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink className="text-light" tag={Link} to="/contact">Contact</NavLink>
+            <NavItem className='nav-item'>
+              <NavLink className="nav-link" tag={Link} to="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
