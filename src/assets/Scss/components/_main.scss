@@ -1,5 +1,6 @@
 main{
     background-color: $backgroundColor;
+    min-height: 80vh; 
     .social_media{
         a{
             display: flex;
