@@ -6,7 +6,7 @@ export default function Projects() {
     setCategory(newCategory);
   };
   return (
-    <section>
+    <section className='projects'>
       <h2>PROJECTS</h2>
       <aside>
         <button onClick={() => handleCategoryChange("html-css")}>HTML/CSS</button>
