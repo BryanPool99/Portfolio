@@ -1,0 +1,11 @@
+@media (max-width:577px){
+    .navbar>.container-fluid{
+        width: 100vw;
+    }
+   main aside{
+        bottom: 0rem;
+    }
+    main figure{
+        top: 0;
+    }
+}
