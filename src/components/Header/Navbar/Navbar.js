@@ -13,32 +13,10 @@ export default function NavbarComponent(args) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
-    /*
-    <nav>
-        <ul>
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/about">About me</Link>
-            </li>
-            <li>
-              <Link to="/skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-        </ul>
-    </nav>
-    */
-    <nav >
-      <Navbar expand="sm">
-        <NavbarToggler onClick={toggle} />
+      <Navbar expand="sm" className='justify-content-center'>
+        <NavbarToggler className='bg-white' onClick={toggle} />
         <Collapse isOpen={isOpen} navbar >
-          <Nav navbar className='navbar-nav'>
+          <Nav navbar className='navbar-nav align-items-center'>
             <NavItem className='nav-item'>
               <NavLink className="nav-link" tag={Link} to="/">Inicio</NavLink>
             </NavItem>
@@ -57,6 +35,5 @@ export default function NavbarComponent(args) {
           </Nav>
         </Collapse>
       </Navbar>
-    </nav>
   )
 }
