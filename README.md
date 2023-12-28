@@ -1,4 +1,4 @@
-# Portfolio de [BRYAN ARREDONDO]
+# Portfolio de BRYAN ARREDONDO
 
 ¡Bienvenido a mi portfolio! Este proyecto es una presentación de mis habilidades y proyectos como desarrollador web.
 
@@ -17,7 +17,7 @@
 - ReactJS
 - HTML
 - CSS
-- [Scss/Sass]
+- Scss/Sass
 - npm
 - Js
 - Boostrap
@@ -28,15 +28,13 @@
 
    ```bash
    git clone https://github.com/BryanPool99/Portfolio.git
-
-cd tu-portfolio
-npm install
+   
 ## Contacto
 
 ¡Me encantaría conectarme contigo! Puedes encontrarme en los siguientes lugares:
 
 - **Correo Electrónico:** [bryanpool991@hotmail.com](mailto:bryanpool991@hotmail.com)
-- **LinkedIn:** [Mi Perfil de LinkedIn](https://www.linkedin.com/in/bryan-pool-arredondo-ovalle/)
+- **LinkedIn:** [Bryan Arredondo](https://www.linkedin.com/in/bryan-pool-arredondo-ovalle/)
 
 ¡No dudes en enviarme un mensaje si tienes preguntas, ideas o solo quieres charlar sobre desarrollo web!
 
