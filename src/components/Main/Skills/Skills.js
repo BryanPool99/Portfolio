@@ -3,7 +3,7 @@ import Skill from './component_skill/skill';
 export default function Skills() {
   return (
     <section className='skills'>
-      <div className='container-skills container-fluid d-flex flex-column align-items-center justify-content-center'>
+      <div className='container-skills container-fluid d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeIn animate__delay-.5s'>
         <h2>SKILLS</h2>
         <Skill title="Lenguaje de programacion" category="lenguaje"/>
         <Skill title="Frontend Development" category="front"/>
