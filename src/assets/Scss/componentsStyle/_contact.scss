@@ -1,0 +1,28 @@
+.bgContact{
+    min-height: 80vh;
+    padding: 2rem;
+    background: $backgroundColor;
+    aside{
+        max-width: 50rem;
+        h2{
+            animation: fadeInLeft 2s ease-out;
+            padding: 1rem;
+            border: 5px solid $black;
+        }
+        Form{
+            animation: fadeInRight 2s ease-out;
+            Input,#msg,textarea{
+                background-color: transparent!important;
+                border: none!important;
+                border-left: 5px solid black!important;
+                border-bottom: 5px solid black!important;
+                margin-bottom: 2rem;
+                &:focus{
+                    border-color: initial; /* o el color que desees */
+                    box-shadow: none;
+                }
+            }
+        }
+        
+    }
+}

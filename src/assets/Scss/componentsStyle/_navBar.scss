@@ -1,0 +1,25 @@
+
+// Estilos del navbar
+
+    .navbar>.container-fluid{
+        justify-content: flex-end;
+    }
+    .nav-link{
+        font-weight: 700;
+        text-align: center;
+        margin: 0 5px;
+        padding: 10px;
+        width: 100px;
+        color: $color-text;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: $black;
+            background: $colorWhite; /* Color del texto al pasar el mouse */
+            border-radius: 20px;
+          }
+        &:focus{
+            color: $black;
+            background: $colorWhite; /* Color del texto al pasar el mouse */
+            border-radius: 20px;
+        }
+    }

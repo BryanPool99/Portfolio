@@ -1,0 +1,50 @@
+main{
+    min-height: 60vh; 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='560' viewBox='0 0 1440 560'%3e%3crect x='0' y='0' width='1440' height='560' fill='%238c8c8c'/%3e%3cpolygon points='0,560 1440,560 1440,0 1440,0' fill='%23000'/%3e%3c/svg%3e");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aside{
+        animation: fadeInLeft 2s ease-out;
+        position: relative;
+        bottom: 5rem;
+        p{
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        .social_media{
+            a{
+                display: flex;
+                width: 2rem;
+                padding: .5rem;
+                margin: .5rem;
+                color: $black;
+                text-decoration: none;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                transition: box-shadow 0.3s ease;
+    
+                &:hover {
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+                }
+    
+                &:focus {
+                    outline: none;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 0px 0px 3px #007bff;
+                }
+            } 
+        }
+    }
+    figure{
+        margin: 0;
+        width: 20rem;
+        animation: fadeInRight 2s ease-out;
+        position: relative;
+        top: 7.5rem;
+        img{
+            width: 100%;
+        }
+    }
+}

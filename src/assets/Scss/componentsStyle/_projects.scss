@@ -1,0 +1,42 @@
+.projects {
+    background: $backgroundColor;
+
+    h2 {
+        border: 5px solid $black;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    aside {
+        margin: 1rem;
+        padding: 40px 0;
+        width: 85vw;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        .container-card {
+            animation: fadeInLeft .5s ease-out;
+            text-align: center;
+            max-width: 20rem;
+            height: 28rem;
+            figure {
+                width: 100%;
+                margin: 0rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .btn-group{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                
+            }
+        }
+
+    }
+}

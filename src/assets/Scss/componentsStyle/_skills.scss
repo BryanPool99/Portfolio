@@ -1,0 +1,37 @@
+.skills{
+    background: $backgroundColor;
+    padding: 2rem;
+    .container-skills{
+        max-width: 80rem;
+        h2{
+            padding: 1rem;
+        }
+        aside{
+            width: 80vw;
+            margin: .5rem;
+            h3{
+                padding: 1rem;
+            }
+            figure{
+                margin: .5rem;
+                width: 15rem;
+                img{
+                    padding: 1rem;
+                    width: 100%;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                }   
+            }
+            hr{
+                height: .2rem;
+                background-color: $black; 
+                border: none;
+                margin: 10px 0;
+            }
+        }
+    }
+}
